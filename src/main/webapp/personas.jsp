@@ -21,7 +21,7 @@
             
             <div class="row justify-content-end">
                 <div class="col-auto">
-                    <a href="/viewsPersona/form.jsp" class="btn btn-primary"> <span class="fas fa-plus"></span> Agregar persona</a>
+                    <a href="PersonaServletController?accion=insert" class="btn btn-primary"> <span class="fas fa-plus"></span> Agregar persona</a>
                 </div>
             </div>
             
@@ -46,7 +46,7 @@
                             <c:forEach var="persona" items="${personas}">
                                 <tr>
                                     <td class="text-center">
-                                        <a href="" class="fas fa-edit btn btn-warning"></a>
+                                        <a href="PersonaServletController?accion=update&id=${persona.idPersona}" class="fas fa-edit btn btn-warning"></a>
                                     </td>
                                     <td class="text-center">${persona.idPersona}</td>
                                     <td class="text-center">${persona.nombre}</td>
@@ -55,7 +55,7 @@
                                     <td class="text-center">${persona.edad}</td>
                                     <td class="text-center">${persona.sexo}</td>
                                     <td class="text-center">
-                                        <a href="" class="fas fa-trash btn btn-danger"></a>
+                                        <a href="PersonaServletController?accion=delete&id=${persona.idPersona}" class="fas fa-trash btn btn-danger"></a>
                                     </td>
                                 </tr>
                             </c:forEach>

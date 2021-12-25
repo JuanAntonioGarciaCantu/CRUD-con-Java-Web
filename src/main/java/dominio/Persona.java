@@ -42,6 +42,10 @@ public class Persona {
     public int getIdPersona() {
         return IdPersona;
     }
+    
+    public void setIdPersona(int IdPersona) {
+        this.IdPersona = IdPersona;
+    }
 
     public String getNombre() {
         return Nombre;
